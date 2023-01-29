@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Delicato</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fonts/bernier.css">
+    <link rel="stylesheet" href="fonts/stylesheet.css">
+    <link rel="icon" href="img/logo/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="css/popup.css">
+    <link rel="stylesheet" type="text/css" href="slider/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slider/slick-theme.css" />
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body>
+    <div class="b-popup" id="popupThanks">
+
+        <div class="popup_content">
+          <a class="popup_exit" href="javascript:PopUpHide();">
+              <img src="img/close.svg" alt="">
+          </a>
+          <img src="img/popup.svg" alt="" class="popup">
+          <p class="popup_content_name" id="popup_content_name">спасибо за вопрос</p>
+        <p class="popup_content_info">Мы ответим вам в ближайшее вемя на указаный e-mail-адрес</p>
+          <a href="javascript:PopUpHide();" class="closePopupThanks"> Закрыть</a>
+    
+        </div>
+      </div>
+
+      <div class="b-popup-youtube" id="popupYoutube">
+
+        <div class="popup_content">
+          <a class="popup_exit" href="javascript:PopUpHideYoutube();">
+              <img src="img/close.svg" alt="">
+          </a>
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/DUkjN4vLo2M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+        </div>
+      </div>
+
+      <script>
+      
+      </script>
+    <header id="home">
+        <div class="header_top">
+            <div class="header_top_content">
+                <div class="header_top_nav">
+                    <a href="#about">о delicato</a>
+                    <a href="#benefits">преимущества</a>
+                    <a href="#manual">как использовать</a>
+                    <a href="#buy">где купить</a>
+                </div>
+                <div class="header_top_img">
+                    <a href="#home">
+                        <img src="img/logo/logo.svg" alt="">
+                    </a>
+                </div>
+                <div class="menu">
+                    <content>
+                        <input id="hamburger" class="hamburger" type="checkbox" />
+                        <label class="hamburger" for="hamburger">
+                            <i></i>
+                            <text>
+                            </text>
+                        </label>
+
+                        <section class="drawer-list">
+                            <ul><input id="hamburger" class="hamburger" type="checkbox" />
+                                <li> <a href="#about" onclick="document.getElementById('hamburger').checked=false;">о
+                                        delicato</a></li>
+                                <li> <a href="#benefits"
+                                        onclick="document.getElementById('hamburger').checked=false;">преимущества</a>
+                                </li>
+                                <li> <a href="#manual" onclick="document.getElementById('hamburger').checked=false;">как
+                                        использовать</a></li>
+                                <li> <a href="#buy" onclick="document.getElementById('hamburger').checked=false;">где
+                                        купить</a></li>
+
+
+
+                            </ul>
+
+                            <a class="menu_logo" href="index.html">
+                                <img src="img/logo/logo.svg" alt="">
+                            </a>
+                        </section>
+                    </content>
+                </div>
+            </div>
+        </div>
+        <script>
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 1) {
+                    $('.header_top').addClass("sticky");
+                }
+                else {
+                    $('.header_top').removeClass("sticky");
+                }
+            });
+        </script>
+        </div>
+        <div class="header_content">
+            <div class="header_content_bottom">
+                <img src="img/block1/title.svg" alt="Натуральное кокосовое масло">
+                <img src="img/block1/delicate2.svg" alt="Delicato" class="delicato_adapt">
+                <div class="header_content_bottom_info">
+                    <p>Здоровая альтернатива традиционным <br> маслам</p>
+                </div>
+                <a href="#video">подробнее</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="block1" id="about">
+            <img src="img/block2/Object2.png" class="img_obj" alt="">
+            <img src="img/block2/object2_mob.png" class="mobile_obj2" alt="">
+            <div class="block1_content">
+                <div class="block1_content_left">
+                    <img src="img/block2/left_img.png" alt="">
+
+                </div>
+                <div class="block1_content_right">
+                    <div class="block1_content_right_title">
+                        <img src="img/block2/Object.png" alt="">
+                        <p>delicato</p>
+                        <p>рафинированное</p>
+                        <p>100% кокосовое</p>
+                        <p>масло</p>
+                    </div>
+                    <div class="block1_content_right_info">
+                        <p>Отборное сырье из самых кокосовых регионов планеты: Индонезии, Малайзии, Филиппин.</p>
+                    </div>
+                    <a href="#buy">как использовать</a>
+                    <img src="img/block2/Object_mob.png" alt="" class="mobile_obj">
+
+                </div>
+                <div id="video"></div>
+
+            </div>
+        </div>
+        <div class="block2" >
+            <div class="block2_content_img">
+                <img src="img/block3/object1.png" alt="" class="object1">
+                <img src="img/block3/object2.png" alt="" class="object2">
+                <img src="img/block3/object3.png" alt="" class="object3">
+                <img src="img/block3/object4.png" alt="" class="object4">
+
+                <div class="block2_content">
+                    <div class="block2_content_button">
+                        <img src="img/block3/for.png" alt="" class="block2_button_img">
+                        <a href="javascript:PopUpShowYoutube();"><img src="img/block3/button.png" alt=""></a>
+
+                    </div>
+                    <div class="block2_content_info">
+                        <p>легко.</p>
+                        <p>полезно.</p>
+                        <p>деликатно.</p>
+                    </div>
+                    <img src="img/block3/object2.png" alt="" class="object2_mob">
+
+                </div>
+            </div>
+            <div id="benefits"></div>
+        </div>
+        <div class="block3">
+            <div class="block3_content">
+                <div class="block3_content_card">
+                    <img src="img/block4/Shape.png" alt="" class="shape_img">
+                    <div class="block3_content_card_item">
+                        <img src="img/block4/Object1.png" alt="">
+                        <p>100% натуральный <br> кокос</p>
+                    </div>
+                    <div class="block3_content_card_item">
+                        <img src="img/block4/Object2.png" alt="">
+                        <p>Имеет нейтральный вкус, запах и цвет, поэтому универсально в применении</p>
+                    </div>
+                    <div class="block3_content_card_item">
+                        <img src="img/block4/Object3.png" alt="">
+                        <p>Высокие стандарты <br> качества</p>
+
+                    </div>
+                    <div class="block3_content_card_item">
+                        <img src="img/block4/Object4.png" alt="">
+                        <p>Содержит витамин Е, лауриновую и олеиновую кислоты, полезные для кожи и сердечно-сосудистой
+                            системы</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="block3_slick_slider">
+                <img src="img/block4/object.svg" class="slider_obj" alt="">
+                <div class="slider single-item ">
+                    <div class="block3_content_card_item">
+                        <img src="img/block4/Object1.png" alt="">
+                        <p>100% натуральный <br> кокос</p>
+                    </div>
+                    <div class="block3_content_card_item">
+                        <img src="img/block4/Object2.png" alt="">
+                        <p>Имеет нейтральный вкус, запах и цвет, поэтому универсально в применении</p>
+                    </div>
+                    <div class="block3_content_card_item">
+                        <img src="img/block4/Object3.png" alt="">
+                        <p>Высокие стандарты <br> качества</p>
+
+                    </div>
+                    <div class="block3_content_card_item">
+                        <img src="img/block4/Object4.png" alt="">
+                        <p>Содержит витамин Е, лауриновую и олеиновую кислоты, полезные для кожи и сердечно-сосудистой
+                            системы</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="block4" id="manual">
+            <img src="img/block5/coconut.svg" alt="" class="coconut">
+            <img src="img/block5/coconut_mob.svg" class="coconut_mob" alt="">
+            <img src="img/block5/Object_fon.svg" class="object_fon" alt="">
+            <div class="block4_content">
+
+                <div class="block4_content_top">
+                    <div class="block4_content_top_left">
+                        <img src="img/block5/object_title.svg" alt="" class="title_img">
+                        <p>готовить</p>
+                        <p>с delicato - легко</p>
+                    </div>
+                    <div class="block4_content_top_right">
+                        <p>
+                            Кокосовое масло Delicato сохраняет в себе свойства привычных растительных масел. Оно
+                            подходит для жарки, тушения и выпечки и не меняет вкус <br>
+                            и аромат готового блюда.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="block4_content_center">
+                <img src="img/block5/Object_mob.png" class="object_mob" alt="">
+
+                <div class="slider2 single-item2">
+                    <div class="block4_content_center_item">
+                        <img src="img/block5/item1.jpg" alt="" class="rotate">
+                        <p>используйте для жарки</p>
+                        <p>С Delicato можно готовить любые вторые блюда, пожарить картошку или курицу: Delicato
+                            устойчиво к нагреванию без образованя концерогенов</p>
+                    </div>
+                    <div class="block4_content_center_item">
+                        <img src="img/block5/item2.jpg" alt="">
+                        <p>добавляйте в тесто для выпечки</p>
+                        <p>Delicato подходит для приготовления любых десертов. Используйте Delicato так же, как обычное
+                            масло. А ещё это популярный ингредиент для веганских десертов и смузи.</p>
+                    </div>
+                    <div class="block4_content_center_item">
+                        <img src="img/block5/item3.jpg" alt="">
+                        <p>используйте для дели-кето диеты</p>
+                        <p>Очищено от примесей, легко усваивается и способствует здоровому метаболизму.</p>
+                    </div>
+                    <div class="block4_content_center_item">
+                        <img src="img/block5/item4.jpg" alt="">
+                        <p>добавляйте в любимые блюда</p>
+                        <p>Можно использовать для приготовления любых блюд, в том числе и веганских: в составе мякоть
+                            кокоса, без ГМО и животного холестерина.</p>
+                    </div>
+                    <div class="block4_content_center_item">
+                        <img src="img/block5/item5.jpg" alt="">
+                        <p>применяйте для разнообразных блюд</p>
+                        <p>Delicato можно готовить супы, вторые блюда, десерты, коктейли и соусы и быть спокойными за
+                            результат: естественный вкус и аромат готового блюда не изменится.</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="block5" id="buy">
+            <img src="img/block6/figure/coconut.png" class="coconut" alt="">
+            <img src="img/block6/figure/object2.png" alt="" class="object2">
+            <img src="img/block6/figure/object3.png" class="object3" alt="">
+            <img src="img/block6/figure/object4.png" class="object4" alt="">
+            <img src="img/block6/figure/Object_mob.png" class="object_mob" alt="">
+
+            <div class="block5_content">
+                <div class="block5_content_title">
+                    <img src="img/block6/figure/object1.png" alt="">
+                    <p>где купить <br> delicato</p>
+                    <p>Заказывайте кокосовое масло онлайн с удобной <br> доставкой на дом</p>
+                </div>
+                <div class="block5_content_bigIcon" id="bigIcon">
+                    <a href="">
+                        <img src="img/block6/item1.svg" alt="" target="_blank">
+                    </a>
+                    <a href="">
+                        <img src="img/block6/item2.svg" alt="" target="_blank">
+                    </a>
+                    <a href="">
+                        <img src="img/block6/item3.svg" alt="" target="_blank">
+                    </a>
+                    <a href="">
+                        <img src="img/block6/item4.svg" alt="" target="_blank">
+                    </a>
+                    <a href="">
+                        <img src="img/block6/item5.svg" alt="" target="_blank">
+                    </a>
+                    <a href="">
+                        <img src="img/block6/item6.svg" alt="" target="_blank">
+                    </a>
+                    <a href="">
+                        <img src="img/block6/item7.svg" alt="" target="_blank">
+                    </a>
+                </div>
+                <p class="block5_content_tittleSmallIcon">Или покупайте в магазинах.</p>
+                <div class="block5_content_smallIcon" id="smallIcon">
+                    <a href="">
+                        <img src="img/block6/Item21.svg" alt="" target="_blank">
+                    </a>
+                    <a href="">
+                        <img src="img/block6/Item22.svg" alt="" target="_blank">
+                    </a>
+                    <a href="">
+                        <img src="img/block6/Item23.svg" alt="" target="_blank">
+                    </a>
+                    <a href="">
+                        <img src="img/block6/Item24.svg" alt="" target="_blank">
+                    </a>
+                    <a href="">
+                        <img src="img/block6/Item25.svg" alt="" target="_blank">
+                    </a>
+                    <a href="">
+                        <img src="img/block6/Item26.svg" alt="" target="_blank">
+                    </a>
+                    <a href="">
+                        <img src="img/block6/Item27.svg" alt="" target="_blank">
+                    </a>
+                    <a href="">
+                        <img src="img/block6/Item28.svg" alt="" target="_blank">
+                    </a>
+                    <a href="">
+                        <img src="img/block6/Item29.svg" alt="" target="_blank">
+                    </a>
+                    <a href="">
+                        <img src="img/block6/Item30.svg" alt="" target="_blank">
+                    </a>
+                    <a href="">
+                        <img src="img/block6/Item31.svg" alt="" target="_blank">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="block6">
+            <img src="img/block7/coconut.png" class="coconut" alt="">
+            <img src="img/block7/object1.svg" class="object1" alt="">
+            <div class="block6_content">
+                <div class="block6_content_left">
+                    <div class="block6_content_left_title">
+                        <img src="img/block7/form1.png" class="form1_obj" alt="">
+                        <p>узнайте</p>
+                        <p>о delicato</p>
+                        <p>больше</p>
+                    </div>
+                    <div class="block6_content_left_info">
+                        <p>Задайте нам вопрос о кокосовом масле или поделитесь своими впечатлениями. Благодарим вас за
+                            выбор Delicato!
+                        </p>
+                    </div>
+                </div>
+                <div class="block6_content_right">
+                    <form id="form">
+                        <input type="text" class="name" name="name" placeholder="Как вас зовут?" maxlength="100">
+                        <p class="erorName">Введите Имя</p>
+
+                        <input type="text" class="email" name="email" id="email" placeholder="Ваша электронная почта">
+                        <p class="erorEmail">Введите корректный Email</p>
+                        <textarea name="message" class="message" placeholder="Текст сообщения" id="" cols="30" rows="10"
+                            maxlength="1000"></textarea>
+                        <p class="errorMessage">Заполните это поле</p>
+                        <button type="submit" id="btn-submit">отправить</button>
+                        <img src="img/block7/form2.png" class="form2_obj" alt="">
+                    </form>
+                </div>
+              
+            </div>
+            <div class="block6_footer">
+                <img src="img/block7/footer_logoWhite.svg" class="mobile" alt="">
+                <img src="img/block7/footer_logo.svg" class="desktop" alt="">
+                <p> © 2021 Группа компаний «НМЖК»</p>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+
+    </footer>
+    <script src="slider/slick.min.js"></script>
+<script src="js/main.js"></script>
+   
+</body>
+
+</html>

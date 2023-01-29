@@ -1,0 +1,206 @@
+.b-popup-youtube {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgba(68, 34, 22, 0.4);
+  z-index: 999998;
+  font-family: "Lato";
+}
+
+.b-popup-youtube .popup_content {
+  background: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  z-index: 50;
+  background: transparent;
+  max-width: 854px;
+  max-height: 470px;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  padding: 0px 109px;
+  place-items: center;
+  place-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .b-popup-youtube .popup_content {
+    max-height: none;
+    max-height: 370px;
+    border-radius: 0px;
+    padding: 0px 20px;
+  }
+}
+
+.b-popup-youtube .popup_exit {
+  position: absolute;
+  top: 60px;
+  right: 60px;
+  width: 100px;
+  height: 100px;
+  background: white;
+  border-radius: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: center;
+  place-items: center;
+}
+
+@media only screen and (max-width: 1000px) {
+  .b-popup-youtube .popup_exit {
+    top: 10px;
+    right: 12px;
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.b-popup-youtube .popup_exit img {
+  width: 17px;
+}
+
+.b-popup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgba(68, 34, 22, 0.4);
+  z-index: 999998;
+  font-family: "Lato";
+}
+
+.popup_content {
+  background: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  z-index: 50;
+  background: white;
+  max-width: 500px;
+  max-height: 500px;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  padding: 0px 109px;
+  place-items: center;
+  place-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .popup_content {
+    max-height: none;
+    max-width: none;
+    border-radius: 0px;
+    padding: 0px 20px;
+  }
+}
+
+.popup_content .popup {
+  width: 73px;
+}
+
+.popup_exit {
+  position: absolute;
+  top: 60px;
+  right: 60px;
+  width: 100px;
+  height: 100px;
+  background: white;
+  border-radius: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: center;
+  place-items: center;
+}
+
+@media only screen and (max-width: 1000px) {
+  .popup_exit {
+    display: none;
+  }
+}
+
+.popup_content .popup_content_name {
+  font-size: 48px;
+  font-weight: 300;
+  color: black;
+  font-family: 'Bernier';
+  font-size: 40px;
+  color: #442216;
+  line-height: 100%;
+  text-align: center;
+  padding-top: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  .popup_content .popup_content_name {
+    line-height: 30px;
+  }
+}
+
+@media only screen and (max-width: 600px) and (min-width: 1920px) {
+  .popup_content .popup_content_name {
+    font-size: 48px;
+  }
+}
+
+@media only screen and (max-width: 600px) and (max-width: 1920px) {
+  .popup_content .popup_content_name {
+    font-size: calc(20px + 28 * ((100vw - 320px) / 1600));
+  }
+}
+
+.popup_content_info {
+  margin-top: 15px;
+  font-family: 'Futura PT';
+  font-size: 18px;
+  line-height: 120%;
+  color: #442216;
+  text-align: center;
+}
+
+.closePopupThanks {
+  color: #71A75C;
+  font-family: 'Futura PT';
+  font-size: 22px;
+  line-height: 120%;
+  /* identical to box height, or 22px */
+  text-align: center;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  margin-top: 25px;
+}
+/*# sourceMappingURL=popup.css.map */
